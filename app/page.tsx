@@ -9,8 +9,8 @@ export default function Page() {
             <div>
               <div className="eyebrow" aria-label="サービスの特長">
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <circle cx="12" cy="12" r="9" stroke="#C04C74" strokeWidth="1.5"/>
-                  <path d="M8 12h8M12 8v8" stroke="#C04C74" strokeWidth="1.5" strokeLinecap="round"/>
+                  <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5"/>
+                  <path d="M8 12h8M12 8v8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
                 </svg>
                 リモートでも距離を感じさせない寄り添い運用
               </div>
@@ -32,7 +32,7 @@ export default function Page() {
           </div>
         </div>
         <svg className="wave" viewBox="0 0 1440 100" preserveAspectRatio="none">
-          <path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" fill="white"/>
+          <path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" className="wave-fill"/>
         </svg>
       </section>
 
@@ -69,38 +69,38 @@ export default function Page() {
           <div className="service-grid">
             <div className="service-card">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <rect x="8" y="8" width="32" height="32" rx="4" stroke="#C04C74" strokeWidth="2"/>
-                <line x1="16" y1="18" x2="32" y2="18" stroke="#C04C74" strokeWidth="2"/>
-                <line x1="16" y1="24" x2="32" y2="24" stroke="#C04C74" strokeWidth="2"/>
-                <line x1="16" y1="30" x2="28" y2="30" stroke="#C04C74" strokeWidth="2"/>
+                <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" strokeWidth="2"/>
+                <line x1="16" y1="18" x2="32" y2="18" stroke="currentColor" strokeWidth="2"/>
+                <line x1="16" y1="24" x2="32" y2="24" stroke="currentColor" strokeWidth="2"/>
+                <line x1="16" y1="30" x2="28" y2="30" stroke="currentColor" strokeWidth="2"/>
               </svg>
               <h3>総務サポート</h3>
               <p>契約管理、備品、稟議の運用をスムーズに。日常業務の効率化を実現します。</p>
             </div>
             <div className="service-card">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <circle cx="24" cy="16" r="8" stroke="#C04C74" strokeWidth="2"/>
-                <path d="M8 40 C8 32 16 28 24 28 C32 28 40 32 40 40" stroke="#C04C74" strokeWidth="2"/>
+                <circle cx="24" cy="16" r="8" stroke="currentColor" strokeWidth="2"/>
+                <path d="M8 40 C8 32 16 28 24 28 C32 28 40 32 40 40" stroke="currentColor" strokeWidth="2"/>
               </svg>
               <h3>労務サポート</h3>
               <p>入退社手続き、勤怠、社保など、複雑な労務管理を確実にサポート。</p>
             </div>
             <div className="service-card">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <rect x="8" y="12" width="32" height="24" rx="4" stroke="#C04C74" strokeWidth="2"/>
-                <circle cx="24" cy="24" r="6" stroke="#C04C74" strokeWidth="2"/>
-                <line x1="8" y1="18" x2="14" y2="18" stroke="#C04C74" strokeWidth="2"/>
-                <line x1="34" y1="18" x2="40" y2="18" stroke="#C04C74" strokeWidth="2"/>
+                <rect x="8" y="12" width="32" height="24" rx="4" stroke="currentColor" strokeWidth="2"/>
+                <circle cx="24" cy="24" r="6" stroke="currentColor" strokeWidth="2"/>
+                <line x1="8" y1="18" x2="14" y2="18" stroke="currentColor" strokeWidth="2"/>
+                <line x1="34" y1="18" x2="40" y2="18" stroke="currentColor" strokeWidth="2"/>
               </svg>
               <h3>経理サポート</h3>
               <p>請求と支払、経費精算、月次の整理まで、経理業務を正確に処理。</p>
             </div>
             <div className="service-card">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <rect x="8" y="8" width="14" height="14" rx="2" stroke="#C04C74" strokeWidth="2"/>
-                <rect x="26" y="8" width="14" height="14" rx="2" stroke="#C04C74" strokeWidth="2"/>
-                <rect x="8" y="26" width="14" height="14" rx="2" stroke="#C04C74" strokeWidth="2"/>
-                <rect x="26" y="26" width="14" height="14" rx="2" stroke="#C04C74" strokeWidth="2"/>
+                <rect x="8" y="8" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2"/>
+                <rect x="26" y="8" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2"/>
+                <rect x="8" y="26" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2"/>
+                <rect x="26" y="26" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2"/>
               </svg>
               <h3>マニュアル化・DX</h3>
               <p>業務棚卸、手順書、SaaSとRPAの導入で、業務の標準化と自動化を推進。</p>
@@ -165,10 +165,10 @@ export default function Page() {
             ].map((v,i)=>(
               <div className="case-card" key={i}>
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                  <circle cx="24" cy="24" r="20" fill="#F9EEF2" stroke="#E7BAC8" strokeWidth="2"/>
-                  <circle cx="18" cy="20" r="2" fill="#C04C74"/>
-                  <circle cx="30" cy="20" r="2" fill="#C04C74"/>
-                  <path d="M18 30 Q24 34 30 30" stroke="#C04C74" strokeWidth="2" fill="none"/>
+                  <circle cx="24" cy="24" r="20" className="face-bg" strokeWidth="2"/>
+                  <circle cx="18" cy="20" r="2" fill="currentColor"/>
+                  <circle cx="30" cy="20" r="2" fill="currentColor"/>
+                  <path d="M18 30 Q24 34 30 30" stroke="currentColor" strokeWidth="2" fill="none"/>
                 </svg>
                 <div className="case-text">
                   <h3>{v[0]}</h3>

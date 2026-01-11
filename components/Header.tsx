@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import ThemeToggle from './ThemeToggle';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -16,16 +17,20 @@ export default function Header() {
             <a href="#faq">よくある質問</a>
             <a href="#company">会社情報</a>
             <a href="#contact" className="nav-cta">お問い合わせ</a>
+            <ThemeToggle />
           </nav>
-          <button
-            className="hamburger"
-            aria-label="メニューを開く"
-            aria-expanded={open ? 'true' : 'false'}
-            aria-controls="mobileNav"
-            onClick={() => setOpen((v) => !v)}
-          >
-            <span></span><span></span><span></span>
-          </button>
+          <div className="header-actions">
+            <ThemeToggle />
+            <button
+              className="hamburger"
+              aria-label="メニューを開く"
+              aria-expanded={open ? 'true' : 'false'}
+              aria-controls="mobileNav"
+              onClick={() => setOpen((v) => !v)}
+            >
+              <span></span><span></span><span></span>
+            </button>
+          </div>
         </div>
       </div>
       <div className={`mobile-nav ${open ? 'active' : ''}`} id="mobileNav">
